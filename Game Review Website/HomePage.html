@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UNnamed</title>
+        <!-- Link to the main stylesheet -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Link to the main JavaScript file -->
+        <script src="scripts.js" defer></script>
+        <!-- Favicon for the website -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <!-- Header with site title and navigation -->
+        <header>
+            <h1>Welcome to UNnamed Game Review Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!-- This is the homepage link -->
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero section with a background image and introductory text -->
+            <section class="hero">
+                <h2>Your Source for the Latest Game Reviews</h2>
+                <p>Discover in-depth reviews, ratings, and insights on the latest games.</p>
+            </section>
+
+            <!-- Add Game Form: Users can add new games here -->
+            <section class="add-game"> 
+                <h3>Add a new game</h3>
+                <form id = "addGameForm">  <!-- Add Game Form -->
+                    <label for = "gameName">Game Name:</label>
+                    <input type = "text" id = "gameName" name = "gameName" required>
+                    <br>
+                    <label for = "gameDesc">Description:</label>
+                    <textarea id = "gameDesc" name = "gameDesc" required></textarea>
+                    <br>
+                    <label for = "gameRating">Rating:</label>
+                    <input type = "number" id = "gameRating" name = "gameRating" min = "1" max = "5" required>
+                    <br>
+                    <button type = "submit">Add Game</button>
+                </form>
+            </section>
+
+            <!-- Featured Reviews section: Will display highlighted reviews -->
+            <section class="featured-reviews">
+                <h3>Featured Reviews</h3>
+                <ul id = "featuredReviews"></ul>
+                <!-- Featured reviews will be dynamically loaded here -->
+            </section>
+
+            <!-- Latest News section: Will display news articles -->
+            <section class="latest-news">
+                <h3>Latest News</h3>
+                <!-- Latest news articles will be dynamically loaded here -->
+            </section>
+        </main>
+
+        <!-- Footer with copyright -->
+        <footer>
+            <p>&copy; 2023 UNnamed Game Review Website. All rights reserved.</p>
+        </footer>
+</html>
